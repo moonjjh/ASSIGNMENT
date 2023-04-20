@@ -36,7 +36,7 @@ int main() {
 
             // Read message from pipe and display it
             read(pipefd[0], message, sizeof(message));
-            printf("Child %d: Message received: %s", i, message);
+            printf("Child %d: Message received: %s ", i, message);
 
             close(pipefd[0]); // Close read end of pipe
             exit(EXIT_SUCCESS);
@@ -73,7 +73,7 @@ int main() {
         waitpid(child[i], NULL, 0);
     }
 
-    printf("Parent: All children has received messages. Exiting...\n");
+    printf(" Parent: All children has received messages. Exiting...\n ");
 
     return 0;
 }
