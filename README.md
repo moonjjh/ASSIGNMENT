@@ -1,1 +1,1 @@
-# This is my ITT440 individual assignment 
+# This is my ITT440 Individual Assignment
